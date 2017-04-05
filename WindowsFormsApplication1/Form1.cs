@@ -52,6 +52,10 @@ namespace WindowsFormsApplication1
             Finalvideo.DesiredFrameRate = 20;//saniyede kaç görüntü alsın istiyorsanız. FPS
             Finalvideo.DesiredFrameSize = new Size(320, 240);//görüntü boyutları
             Finalvideo.Start();
+
+
+
+
         }
 
         void Finalvideo_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -73,6 +77,9 @@ namespace WindowsFormsApplication1
                 // apply the filter
                 filter.ApplyInPlace(image1);
                 nesnebul(image1);  
+
+
+
             }
 
             if (rdiobtnMavi.Checked)
